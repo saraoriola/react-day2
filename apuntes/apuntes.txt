@@ -1,0 +1,16 @@
+APUNTES
+
+FUNCIONES LLAMADAS SIMULTANEAMENTE
+No se puede llamar a las funciones mediante comas directamente en el atributo onClick: 
+--> return <div onClick={increment, decrement}>CounterFunctional: {counter} </div>;
+
+Para ejecutar ambas funciones en el evento onClick, necesitamos crear una nueva función que las llame de manera secuencial:
+const handleClick = () => {
+  increment();
+  decrement();
+};
+
+return <div onClick={handleClick}>CounterFunctional: {counter} </div>;
+
+handleClick es una función que, cuando se ejecute, llamará a increment y luego a decrement, asegurando que ambas funciones sean ejecutadas al hacer clic en el elemento <div>. Es una forma de agrupar ambas acciones bajo una sola función para el evento onClick.
+
