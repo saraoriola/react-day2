@@ -11,11 +11,11 @@ const CounterFunctional = (props) => {
   return (
     <>
       <div className="calculator">
-        <button className="calculator__button calculator__button-minus" onClick={decrement}>
+        <button className="calculator_button-minus" onClick={decrement}>
           -
         </button>
-        <span className="calculator__display">{counter}</span>
-        <button className="calculator__button calculator__button-plus" onClick={increment}>
+        <span className="calculator_display">{counter}</span>
+        <button className="calculator_button-plus" onClick={increment}>
           +
         </button>
       </div>

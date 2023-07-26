@@ -15,26 +15,26 @@
   margin: 5px;
 }
 
-.calculator__button-minus {
+.calculator_button-minus {
   background-color: #fabe64; 
   color: #2c2c2c; 
 }
 
-.calculator__button-plus {
+.calculator_button-plus {
   background-color: #a2faa2; 
   color: #2c2c2c; 
 }
 
-.calculator__button-minus:hover {
+.calculator_button-minus:hover {
   background-color: #fa8e00; 
   color: #fff; 
 }
 
-.calculator__button-plus:hover {
+.calculator_button-plus:hover {
   background-color: #09ff00; 
   color: #fff; 
 }
-.calculator__display {
+.calculator_display {
   font-size: 36px;
   font-family: "Consolas", sans-serif;
   padding: 10px;
